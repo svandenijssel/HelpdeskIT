@@ -3,8 +3,17 @@ body {
   background-color: #e2e6ea;
 }
 
+main {
+    margin-top: 4.5rem;
+}
+
+
+
 @media (max-width: 767.98px) {
-    .organisationcard, .recordlist {
+    main {
+        margin-top: 8.5rem;
+    }
+    .organisationcard, .list, .meldingenlist {
         padding-left: 0px!important;
         padding-right: 0px!important;
     }
@@ -49,7 +58,11 @@ body {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
 }
-
+@media (max-width: 767.98px) {
+    .navbar .form-control {
+      padding: 1.2rem 1rem;  
+    }
+}
 
 /*
  * Melding list
@@ -74,10 +87,12 @@ body {
    color:#00ad5f;
 }
 .operator {
-    height: 60px;
-    width: 60px;
-    border: 1px solid rgba(0,0,0,0.07);
+    height: 50px;
+    width: 50px;
+    border: 1px solid rgba(0,0,0,0.2);
     border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
 }
 
 
