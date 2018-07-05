@@ -1,0 +1,94 @@
+body {
+  font-size: 1.1rem;
+  background-color: #e2e6ea;
+}
+
+@media (max-width: 767.98px) {
+    .organisationcard, .recordlist {
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+    }
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+.list-group-item, .card-header {
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+}
+
+.lightgrey {
+    color : rgba(0,0,0,0.3);
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+
+/*
+ * Melding list
+ */
+
+.aangemaakt {
+   border-left: 3px solid #cb6003!important;
+}
+.aangemaakt .status {
+   color:#cb6003;
+}
+.inbehandeling {
+    border-left: 3px solid #49a8fa!important;
+}
+.inbehandeling .status {
+   color:#49a8fa;
+}
+.afgerond {
+    border-left: 3px solid #00ad5f!important;
+}
+.afgerond .status {
+   color:#00ad5f;
+}
+.operator {
+    height: 60px;
+    width: 60px;
+    border: 1px solid rgba(0,0,0,0.07);
+    border-radius: 100%;
+}
+
+
+/*
+ * Icon
+ */
+
+.x2 {
+    font-size: 1.5rem;
+}
+
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
