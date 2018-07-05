@@ -1,13 +1,23 @@
 body {
   font-size: 1.1rem;
-  background-color: #e2e6ea;
+  background-color: #f8f6f4;
 }
 
 main {
-    margin-top: 4.5rem;
+    margin-top: 4.6rem;
 }
 
-
+.gradient1 {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#174175+33,23af9d+67,deff3a+90 */
+background: #174175; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #174175 33%, #23af9d 67%, #deff3a 90%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #174175 33%,#23af9d 67%,#deff3a 90%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #174175 33%,#23af9d 67%,#deff3a 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#174175', endColorstr='#deff3a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.gradient1 h2, .gradient1 b, .gradient1 p {
+    color:rgba(255,255,255, 0.8);
+}
 
 @media (max-width: 767.98px) {
     main {
@@ -33,18 +43,21 @@ main {
     color : rgba(0,0,0,0.3);
 }
 
+
 /*
  * Navbar
  */
 
 .navbar-brand {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
   font-size: 1rem;
 }
-
+.navbar-brand img {
+    height: 60px;
+}
 .navbar .form-control {
-  padding: .75rem 1rem;
+  padding: 1.5rem 1rem;
   border-width: 0;
   border-radius: 0;
 }
@@ -53,11 +66,19 @@ main {
   color: #fff;
   background-color: rgba(255, 255, 255, .1);
 }
-
 .form-control-dark:focus {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
 }
+.form-control-light {
+  color: #fff;
+  background-color: rgba(0, 0, 0, .06);
+}
+.form-control-light:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, .25);
+}
+
 @media (max-width: 767.98px) {
     .navbar .form-control {
       padding: 1.2rem 1rem;  
@@ -67,7 +88,15 @@ main {
 /*
  * Melding list
  */
-
+.card-header {
+    min-height: 6rem!important;
+}
+.bg-meldingen-header{
+    background: url(../img/header_meldingen.jpg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .aangemaakt {
    border-left: 3px solid #cb6003!important;
 }

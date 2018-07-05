@@ -9,28 +9,32 @@
         <link rel="stylesheet" href="css/helpdeskit.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         
-        <title>Hello, world!</title>
+        <title>Melding overzicht</title>
     </head>
     <body id="meldingen">
-        <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-sm-3 col-md-4 mr-0 pl-4" href="#">
-            <img src="img/logo-white.png" alt="Logo"/>
+        <nav class="navbar  fixed-top bg-white flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-3 mr-0 pl-4" href="#">
+            <img src="img/logo.jpg" alt="Logo"/>
         </a>
-        <input class="form-control form-control-dark w-100 search" type="text" placeholder="Zoek en filter meldingen" aria-label="Search">
+        <input class="form-control form-control-light w-100 search" type="text" placeholder="Zoek en filter meldingen" aria-label="Search">
         <ul class="navbar-nav px-4 d-none d-md-block">
           <li class="nav-item text-nowrap">
-              <a class="nav-link" href="#">030-2568946<i class="ml-2 icon ion-ios-phone-portrait x2"></i></a>
+              <a class="nav-link lightgrey" href="tel:0306585651"><i class="mr-2 icon ion-ios-phone-portrait x2"></i>030 6585 651</a>
           </li>
         </ul>
       </nav>
 
         <main role="main">
-            <div class="jumbotron" >
+            <div class="jumbotron gradient1" >
                 <div class="container">
-                    <h2 class="d-none d-md-block">Alle meldingen van {{organisatie.naam}}<br>in één overzicht</h2>
-                    <b class="d-md-none d-sm-block">Alle meldingen van {{organisatie.naam}}in één overzicht</b>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2 class="d-none d-md-block">Alle meldingen van {{organisatie.naam}}<br>in één overzicht</h2>
+                            <b class="d-md-none d-sm-block">Alle meldingen van {{organisatie.naam}}in één overzicht</b>
+                            <p>HelpdeskIT behandeld sind {{orgnisatie.datum}} meldingen die door {{organisatie.naam}} ingediend. Hieronder ziet u een overzicht van alle medlingen die in ons systeem staan. Indien u vragen heeft, neem dan contact op met onze helpdesk service via nummer: 03024569874</p>
+                        </div>
+                    </div>
                     
-                    <p>HelpdeskIT behandeld sind {{orgnisatie.datum}} meldingen die door {{organisatie.naam}} ingediend. Hieronder ziet u een overzicht van alle medlingen die in ons systeem staan. Indien u vragen heeft, neem dan contact op met onze helpdesk service via nummer: 03024569874</p>
                 </div>
             </div>
 
@@ -56,7 +60,7 @@
                     </div>
                     <div class="col-md-8 meldingenlist">
                         <div class="card">
-                            <div class="card-header text-right">
+                            <div class="card-header text-right text-white bg-meldingen-header">
                               <i class="icon ion-ios-headset x2 pr-2"></i>Meldingen
                             </div>
                               <ul class="list-group list-group-flush list">
