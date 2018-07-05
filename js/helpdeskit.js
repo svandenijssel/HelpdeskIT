@@ -1,7 +1,11 @@
 $(document).ready(function(){
+   $(".intro").removeClass('invisible').addClass('animated fadeInLeft');
    setTimeout(function(){
-       $(".display-3").removeClass('invisible').addClass('animated fadeInUp');
-    }, 500);
+       $(".organisationcard").removeClass('invisible').addClass('animated fadeInLeft');
+    }, 400);
+   setTimeout(function(){
+       $(".meldingenlist").removeClass('invisible').addClass('animated fadeIn');
+    }, 800);    
     
     $( ".modal-call" ).click(function() {
         var meldingid = $(this).attr('data-id');

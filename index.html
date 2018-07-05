@@ -13,8 +13,8 @@
     </head>
     <body id="meldingen">
         <nav class="navbar  fixed-top bg-white flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-sm-3 col-md-3 mr-0 pl-4" href="#">
-            <img src="img/logo.jpg" alt="Logo"/>
+        <a class="navbar-brand col-sm-3 col-md-3 mr-0 pl-4" href="https://esperantoxl.nl" title="Een assessment case" >
+            <img src="img/logo.jpg" alt="HelpdeskIT"/>
         </a>
         <input class="form-control form-control-light w-100 search" type="text" placeholder="Zoek en filter meldingen" aria-label="Search">
         <ul class="navbar-nav px-4 d-none d-md-block">
@@ -28,7 +28,7 @@
             <div class="jumbotron gradient1" >
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-8 intro invisible">
                             <h2 class="d-none d-md-block">Alle meldingen van {{organisatie.naam}}<br>in één overzicht</h2>
                             <b class="d-md-none d-sm-block">Alle meldingen van {{organisatie.naam}}in één overzicht</b>
                             <p>HelpdeskIT behandeld sind {{orgnisatie.datum}} meldingen die door {{organisatie.naam}} ingediend. Hieronder ziet u een overzicht van alle medlingen die in ons systeem staan. Indien u vragen heeft, neem dan contact op met onze helpdesk service via nummer: 03024569874</p>
@@ -41,10 +41,14 @@
             <div class="container">
                 <div class="row">
                     <!-- org -->
-                    <div class="col-md-4 organisationcard">
+                    <div class="col-md-4 organisationcard invisible">
                          <div class="card">
-                            <div class="card-header bg-white" >
-                                <img src="img/logo-white.png" alt="Logo"/>
+                            <div class="card-header bg-white py-0" >
+                                <div class="row" style="height:100px;">
+                                    <div class="col align-self-center">
+                                        <img src="img/logo-white.png" alt="Logo"/>
+                                    </div> 
+                                </div>
                             </div>
                           <div class="card-body">
                             
@@ -58,9 +62,9 @@
                           </div>
                         </div>
                     </div>
-                    <div class="col-md-8 meldingenlist">
+                    <div class="col-md-8 meldingenlist invisible">
                         <div class="card">
-                            <div class="card-header text-right text-white bg-meldingen-header">
+                            <div class="card-header text-white bg-meldingen-header">
                               <i class="icon ion-ios-headset x2 pr-2"></i>Meldingen
                             </div>
                               <ul class="list-group list-group-flush list">
@@ -81,17 +85,20 @@
                                         </p>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-4 pb-2">
+                                        <div class="col-md-7 order-last order-md-1 pb-2">
+                                            <div class="d-flex operator-naam">
+                                                <div class="p-2">
+                                                    <img src="img/m3.jpg" alt="m3" class="operator">
+                                                </div>
+                                                <div class="pt-2">
+                                                    <small>Behandeld door</small>
+                                                    <h5><span class="s_naam">Sander van den IJssel</span></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 order-first order-md-2 pt-4 ">
                                             <a class="btn btn-light" data-toggle="collapse" href="#collapse-1" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="icon ion-ios-arrow-dropdown 2x pl-2"></i> Details</a>
                                             <button type="button" class="btn btn-light modal-call" data-id="1"><i class="icon ion-ios-flag 2x pl-2"></i> Log</button>
-                                        </div>
-                                        <div class="col-md-8 pb-2">
-                                            <div class="d-flex operator-naam">
-                                                <div class="p-2" style="border-left:1px solid #eeeeee;" >
-                                                    <img src="img/m3.jpg" alt="m3" class="operator" />
-                                                </div>
-                                                <div class="pt-2"><small>Behandeld door</small><h5><span class="s_naam">Sander van den IJssel</span></h5></div>
-                                            </div>
                                         </div>
                                     </div>
                                 </li>
@@ -112,18 +119,21 @@
                                           Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                                         </p>
                                     </div>
-                                     <div class="row">
-                                        <div class="col-md-4 pb-2">
+                                    <div class="row">
+                                        <div class="col-md-7 order-last order-md-1 pb-2">
+                                            <div class="d-flex operator-naam">
+                                                <div class="p-2">
+                                                    <img src="img/m3.jpg" alt="m3" class="operator">
+                                                </div>
+                                                <div class="pt-2">
+                                                    <small>Behandeld door</small>
+                                                    <h5><span class="s_naam">Sander van den IJssel</span></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 order-first order-md-2 pt-4 ">
                                             <a class="btn btn-light" data-toggle="collapse" href="#collapse-2" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="icon ion-ios-arrow-dropdown 2x pl-2"></i> Details</a>
                                             <button type="button" class="btn btn-light modal-call" data-id="2"><i class="icon ion-ios-flag 2x pl-2"></i> Log</button>
-                                        </div>
-                                        <div class="col-md-8 pb-2">
-                                            <div class="d-flex operator-naam">
-                                                <div class="p-2" style="border-left:1px solid #eeeeee;" >
-                                                    <img src="img/m3.jpg" alt="m3" class="operator" />
-                                                </div>
-                                                <div class="pt-2"><small>Behandeld door</small><h5><span class="s_naam">Sander van den IJssel</span></h5></div>
-                                            </div>
                                         </div>
                                     </div>
                                 </li>
@@ -145,25 +155,24 @@
                                         </p>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-4 pb-2">
+                                        <div class="col-md-7 order-last order-md-1 pb-2">
+                                            <div class="d-flex operator-naam">
+                                                <div class="p-2">
+                                                    <img src="img/m3.jpg" alt="m3" class="operator">
+                                                </div>
+                                                <div class="pt-2">
+                                                    <small>Behandeld door</small>
+                                                    <h5><span class="s_naam">Sander van den IJssel</span></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 order-first order-md-2 pt-4 ">
                                             <a class="btn btn-light" data-toggle="collapse" href="#collapse-3" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="icon ion-ios-arrow-dropdown 2x pl-2"></i> Details</a>
                                             <button type="button" class="btn btn-light modal-call" data-id="3"><i class="icon ion-ios-flag 2x pl-2"></i> Log</button>
                                         </div>
-                                        <div class="col-md-8 pb-2">
-                                            <div class="d-flex operator-naam">
-                                                <div class="p-2" style="border-left:1px solid #eeeeee;" >
-                                                    <img src="img/m3.jpg" alt="m3" class="operator" />
-                                                </div>
-                                                <div class="pt-2"><small>Behandeld door</small><h5><span class="s_naam">Sander van den IJssel</span></h5></div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </li>
-            
                               </ul>
-                            <div class="card-body">
-                              
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -174,31 +183,28 @@
         </main>
 
         <footer class="container">
-            <p>&copy; HelpdeskIT 2018 | Rijnzathe 30</p>
+            <small>&copy; HelpdeskIT 2018 | Rijnzathe 30 | 3454 PV De Meern | info@esperantoxl.nl</small>
         </footer>
 
-<div class="modal fade modal-trigger" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Log gebertenissen.</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Er is geen log geregistreerd voor deze melding.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Sluit venster</button>
-      </div>
-    </div>
-  </div>
-</div>
+        <div class="modal fade modal-trigger" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Log gebertenissen.</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Er is geen log geregistreerd voor deze melding.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Sluit venster</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <!-- Optional JavaScript -->
-
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>

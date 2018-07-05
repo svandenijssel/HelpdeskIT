@@ -14,6 +14,7 @@ background: -moz-linear-gradient(-45deg, #174175 33%, #23af9d 67%, #deff3a 90%);
 background: -webkit-linear-gradient(-45deg, #174175 33%,#23af9d 67%,#deff3a 90%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(135deg, #174175 33%,#23af9d 67%,#deff3a 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#174175', endColorstr='#deff3a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+border-bottom: 1px solid #d9d7d7;
 }
 .gradient1 h2, .gradient1 b, .gradient1 p {
     color:rgba(255,255,255, 0.8);
@@ -92,7 +93,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#174175', end
     min-height: 6rem!important;
 }
 .bg-meldingen-header{
-    background: url(../img/header_meldingen.jpg);
+    background: url(../img/header_meldingen2.jpg);
     background-position: top right;
     background-repeat: no-repeat;
     background-size: cover;
