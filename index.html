@@ -25,23 +25,21 @@
       </nav>
 
         <main role="main">
-            <div class="jumbotron gradient1" >
+            <div class="jumbotron gradient1 d-none d-md-block" >
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8 intro invisible">
-                            <h2 class="d-none d-md-block">Alle meldingen van {{organisatie.naam}}<br>in één overzicht</h2>
-                            <b class="d-md-none d-sm-block">Alle meldingen van {{organisatie.naam}}in één overzicht</b>
+                        <div class="col-md-8 intro">
+                            <h2>Alle meldingen van {{organisatie.naam}}<br>in één overzicht</h2>
                             <p>HelpdeskIT behandeld sind {{orgnisatie.datum}} meldingen die door {{organisatie.naam}} ingediend. Hieronder ziet u een overzicht van alle medlingen die in ons systeem staan. Indien u vragen heeft, neem dan contact op met onze helpdesk service via nummer: 03024569874</p>
                         </div>
-                    </div>
-                    
+                    </div>  
                 </div>
             </div>
 
             <div class="container">
                 <div class="row">
                     <!-- org -->
-                    <div class="col-md-4 organisationcard invisible">
+                    <div class="col-md-4 organisationcard invisible d-none d-md-block">
                          <div class="card">
                             <div class="card-header bg-white py-0" >
                                 <div class="row" style="height:100px;">
@@ -65,7 +63,8 @@
                     <div class="col-md-8 meldingenlist invisible">
                         <div class="card">
                             <div class="card-header text-white bg-meldingen-header">
-                              <i class="icon ion-ios-headset x2 pr-2"></i>Meldingen
+                                <i class="icon ion-ios-headset x2 pr-2"></i>Meldingen
+                                <span class="d-block d-md-none" >Twitter, Inc.</span>
                             </div>
                               <ul class="list-group list-group-flush list">
                                 <li class="list-group-item afgerond pb-4">

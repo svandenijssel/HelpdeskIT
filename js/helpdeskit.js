@@ -1,10 +1,9 @@
 $(document).ready(function(){
-   $(".intro").removeClass('invisible').addClass('animated fadeInLeft');
    setTimeout(function(){
        $(".organisationcard").removeClass('invisible').addClass('animated fadeInLeft');
     }, 400);
    setTimeout(function(){
-       $(".meldingenlist").removeClass('invisible').addClass('animated fadeIn');
+       $(".meldingenlist").removeClass('invisible').addClass('animated fadeInRight');
     }, 800);    
     
     $( ".modal-call" ).click(function() {
